@@ -1,2 +1,4 @@
 packer_cache
 builds
+*.vmdk
+*.vdi
