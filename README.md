@@ -7,6 +7,11 @@ Images
 
 Published under https://app.vagrantup.com/eugenmayer/boxes/debian9
 
+ - using 2 drives, one for the system, one for data ( showing of in preseed )
+ - extra volume for /var/log to ensure we cannot run full due to logs
+ - LVM with 2 vgs, one for each drive (system/data)
+ 
+
 Usage as a platform would be
 
 ```yaml
