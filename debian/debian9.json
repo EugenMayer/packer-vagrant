@@ -7,7 +7,7 @@
     "box_basename": "debian-9.1",
     "build_timestamp": "{{isotime \"20060102150405\"}}",
     "cpus": "1",
-    "disk_size": "40960",
+    "disk_size": "10960",
     "headless": "false",
     "http_proxy": "{{env `http_proxy`}}",
     "https_proxy": "{{env `https_proxy`}}",
@@ -20,6 +20,7 @@
     "name": "debian-9.1",
     "no_proxy": "{{env `no_proxy`}}",
     "preseed_path": "debian9/preseed.cfg",
+    "preseed_qemu_path": "debian9/preseed_qemu.cfg",
     "template": "debian-9.1-amd64",
     "version": "TIMESTAMP"
   },
@@ -28,7 +29,8 @@
        "boot_command": [
         "<esc><wait>",
         "install <wait>",
-        " preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/debian9/preseed_qemu.cfg <wait>",
+        "net.ifnames=0 <wait>",
+         " preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/{{user `preseed_path`}} <wait>",
         "debian-installer=en_US.UTF-8 <wait>",
         "auto <wait>",
         "locale=en_US.UTF-8 <wait>",
@@ -49,7 +51,7 @@
         "passwd/user-uid=\"1000\" ",
         "passwd/user-password=\"{{user `password`}}\" passwd/user-password-again=\"{{user `password`}}\" ",
 
-         "partman-auto/disk /dev/sda /dev/sdb",
+         "partman-auto/disk=\"/dev/sda /dev/sdb\" ",
          "<enter><wait>"
       ],
       "http_directory": "../resources/http",
@@ -105,7 +107,7 @@
       "boot_command": [
         "<esc><wait>",
         "install <wait>",
-        " preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/{{user `preseed_path`}} <wait>",
+        " preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/{{user `preseed_qemu_path`}} <wait>",
         "debian-installer=en_US.UTF-8 <wait>",
         "auto <wait>",
         "locale=en_US.UTF-8 <wait>",
@@ -126,7 +128,7 @@
         "passwd/user-uid=\"1000\" ",
         "passwd/user-password=\"{{user `password`}}\" passwd/user-password-again=\"{{user `password`}}\" ",
 
-        "partman-auto/disk /dev/vda /dev/vdb",
+        "partman-auto/disk=\"/dev/vda /dev/vdb\" ",
         "<enter><wait>"
       ],
       "http_directory": "../resources/http",
@@ -146,6 +148,8 @@
       "type": "qemu",
       "output_directory": "packer-{{user `template`}}-qemu",
       "disk_interface": "virtio",
+      "net_device": "virtio-net",
+      "format": "qcow2",
       "vm_name": "{{ user `template` }}",
       "qemuargs": [
         [ "-drive",

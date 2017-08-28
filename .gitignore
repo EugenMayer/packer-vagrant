@@ -2,4 +2,6 @@ packer_cache
 builds
 *.vmdk
 *.vdi
+*.qcow2
 *-amd64-virtualbox
+*-amd64-qemu
