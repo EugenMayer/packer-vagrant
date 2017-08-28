@@ -8,7 +8,7 @@
     "build_timestamp": "{{isotime \"20060102150405\"}}",
     "cpus": "1",
     "disk_size": "40960",
-    "headless": "true",
+    "headless": "false",
     "http_proxy": "{{env `http_proxy`}}",
     "https_proxy": "{{env `https_proxy`}}",
     "iso_checksum": "c9e070074de83aa22e141f59a423e5210a5019b369ef1efe61a2afd44ba8f371",
@@ -19,13 +19,13 @@
     "mirror_directory": "9.1.0/amd64/iso-cd",
     "name": "debian-9.1",
     "no_proxy": "{{env `no_proxy`}}",
-    "preseed_path": "debian9/preseed.cfg",
+    "preseed_path": "debian9/preseed_qemu.cfg",
     "template": "debian-9.1-amd64",
     "version": "TIMESTAMP"
   },
   "builders": [
     {
-       "boot_command": [
+      "boot_command": [
         "<esc><wait>",
         "install <wait>",
         " preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/{{user `preseed_path`}} <wait>",
@@ -48,7 +48,7 @@
         "passwd/user-fullname=\"{{user `user`}}\" ",
         "passwd/user-uid=\"1000\" ",
         "passwd/user-password=\"{{user `password`}}\" passwd/user-password-again=\"{{user `password`}}\" ",
-         "<enter><wait>"
+        "<enter><wait>"
       ],
       "http_directory": "../resources/http",
       "boot_wait": "10s",
@@ -57,46 +57,25 @@
       "iso_checksum": "{{user `iso_checksum`}}",
       "iso_checksum_type": "{{user `iso_checksum_type`}}",
       "iso_url": "{{user `mirror`}}/{{user `mirror_directory`}}/{{user `iso_name`}}",
-      "output_directory": "packer-{{user `template`}}-virtualbox",
       "shutdown_command": "echo 'vagrant' | sudo -S /sbin/shutdown -hP now",
       "ssh_username": "{{user `user`}}",
       "ssh_password": "{{user `password`}}",
       "ssh_port": "{{user `ssh_port`}}",
       "ssh_wait_timeout": "10000s",
+      "output_directory": "packer-{{user `template`}}-qemu",
 
-      "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
-      "guest_os_type": "Debian_64",
-      "hard_drive_interface": "sata",
-      "type": "virtualbox-iso",
-      "vboxmanage": [
-        [
-          "modifyvm",
-          "{{.Name}}",
-          "--memory",
-          "{{ user `memory` }}"
+      "type": "qemu",
+      "disk_interface": "virtio",
+      "vm_name": "{{ user `template` }}",
+      "qemuargs": [
+        [ "-drive",
+          "file=system_disk_qemu.vmdk,if=virtio,index=0,format=raw,id=disk0"
         ],
-        [
-          "modifyvm",
-          "{{.Name}}",
-          "--cpus",
-          "{{ user `cpus` }}"
-        ],
-        [
-          "createhd",
-          "disk",
-          "--format",
-          "VMDK",
-          "--filename",
-          "data_disk.vmdk",
-          "--variant",
-          "STREAM",
-          "--size",
-          "1000"
-        ],
-        [ "storageattach", "{{.Name}}", "--storagectl", "SATA Controller", "--port", "1", "--type", "hdd", "--medium", "data_disk.vmdk" ]
-      ],
-      "virtualbox_version_file": ".vbox_version",
-      "vm_name": "{{ user `template` }}"
+        [ "-drive",
+          "file=data_disk_qemu.vmdk,if=virtio,index=1,format=raw,id=disk1"
+        ]
+      ]
+
     }
   ],
   "provisioners": [
@@ -121,8 +100,7 @@
   "post-processors": [
     {
       "output": "builds/{{user `box_basename`}}.{{.Provider}}.box",
-      "type": "vagrant",
-      "keep_input_artifact": true
+      "type": "vagrant"
     }
   ]
 }
