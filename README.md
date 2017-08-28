@@ -29,6 +29,6 @@ Build
 for example
 
 ```bash
-cd debian
-packer build debian9.json
+make debian_vbox
+make debian_qemu
 ```
