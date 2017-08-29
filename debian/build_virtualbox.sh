@@ -3,4 +3,4 @@
 set -e
 
 export PACKER_KEY_INTERVAL=10ms
-packer build --only=virtualbox-iso debian.json
+packer build --only=virtualbox-iso debian9.json
