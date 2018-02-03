@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33773852-9bf1-4734-9e97-c65054c8cbaa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debian/build_virtualbox.sh" afterPath="$PROJECT_DIR$/debian/build_virtualbox.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/http/debian9/preseed.cfg" afterPath="$PROJECT_DIR$/resources/http/debian9/preseed.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +16,7 @@
       <file leaf-file-name="debian9.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/debian/debian9.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
+            <state relative-caret-position="314">
               <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
               <folding />
             </state>
@@ -34,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build_virtualbox.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build_virtualbox.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/debian/build_virtualbox.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+              <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -57,8 +56,8 @@
       <file leaf-file-name="makefile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -70,13 +69,7 @@
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="495">
                 <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-                <folding>
-                  <marker date="1503929895000" expanded="true" signature="384:490" ph="platforms: &lt;1 item&gt;" />
-                  <marker date="1503929895000" expanded="true" signature="405:423" ph="eugenmayer/debian9" />
-                  <marker date="1503929895000" expanded="true" signature="428:490" ph="driver: &lt;2 keys&gt;" />
-                  <marker date="1503929895000" expanded="true" signature="447:465" ph="eugenmayer/debian9" />
-                  <marker date="1503929895000" expanded="true" signature="485:490" ph="9.1" />
-                </folding>
+                <folding />
               </first_editor>
               <second_editor />
             </state>
@@ -96,8 +89,8 @@
       <file leaf-file-name="preseed.cfg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed.cfg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="66" column="60" lean-forward="false" selection-start-line="66" selection-start-column="60" selection-end-line="66" selection-end-column="60" />
+            <state relative-caret-position="131">
+              <caret line="53" column="19" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -113,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preseed_qemu.cfg" pinned="false" current-in-tab="false">
+      <file leaf-file-name="preseed_qemu.cfg" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed_qemu.cfg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+            <state relative-caret-position="44">
+              <caret line="51" column="43" lean-forward="false" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -174,11 +167,11 @@
         <option value="$PROJECT_DIR$/debian/build_qemu.sh" />
         <option value="$PROJECT_DIR$/debian/debian9.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/makefile" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/resources/http/debian9/preseed_qemu.cfg" />
-        <option value="$PROJECT_DIR$/resources/http/debian9/preseed.cfg" />
         <option value="$PROJECT_DIR$/debian/build_virtualbox.sh" />
+        <option value="$PROJECT_DIR$/makefile" />
+        <option value="$PROJECT_DIR$/resources/http/debian9/preseed.cfg" />
+        <option value="$PROJECT_DIR$/resources/http/debian9/preseed_qemu.cfg" />
       </list>
     </option>
   </component>
@@ -196,10 +189,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7.1 remote docker" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="398" />
-    <option name="y" value="165" />
-    <option name="width" value="1920" />
-    <option name="height" value="1360" />
+    <option name="y" value="23" />
+    <option name="width" value="1860" />
+    <option name="height" value="972" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -216,6 +208,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -259,22 +254,10 @@
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
               <item name="debian" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="packer-vagrant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="packer-vagrant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="PHP Runtime" type="20ee2d1f:SyntheticLibraryElementNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -420,32 +403,39 @@
       <option name="project" value="LOCAL" />
       <updated>1503747773833</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="reverting grub based boot">
+      <created>1504028636613</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1504028636613</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47272000" />
+    <option name="totallyTimeSpent" value="52192000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="398" y="165" width="1920" height="1360" extended-state="0" />
+    <frame x="0" y="23" width="1860" height="972" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885376" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26198083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38498023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282795" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36602053" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3312034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3421342" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -455,8 +445,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885376" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885376" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2593184" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38498023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -468,8 +458,8 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -486,7 +476,8 @@
     <MESSAGE value="use ext4, not btrfs" />
     <MESSAGE value="using headless mode" />
     <MESSAGE value="adding gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding gitignore" />
+    <MESSAGE value="reverting grub based boot" />
+    <option name="LAST_COMMIT_MESSAGE" value="reverting grub based boot" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -530,13 +521,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="150">
             <caret line="10" column="69" lean-forward="false" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-            <folding>
-              <marker date="1503929895000" expanded="true" signature="384:490" ph="platforms: &lt;1 item&gt;" />
-              <marker date="1503929895000" expanded="true" signature="405:423" ph="eugenmayer/debian9" />
-              <marker date="1503929895000" expanded="true" signature="428:490" ph="driver: &lt;2 keys&gt;" />
-              <marker date="1503929895000" expanded="true" signature="447:465" ph="eugenmayer/debian9" />
-              <marker date="1503929895000" expanded="true" signature="485:490" ph="9.1" />
-            </folding>
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -563,13 +548,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding>
-              <marker date="1503929895000" expanded="true" signature="384:490" ph="platforms: &lt;1 item&gt;" />
-              <marker date="1503929895000" expanded="true" signature="405:423" ph="eugenmayer/debian9" />
-              <marker date="1503929895000" expanded="true" signature="428:490" ph="driver: &lt;2 keys&gt;" />
-              <marker date="1503929895000" expanded="true" signature="447:465" ph="eugenmayer/debian9" />
-              <marker date="1503929895000" expanded="true" signature="485:490" ph="9.1" />
-            </folding>
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -660,13 +639,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="150">
             <caret line="10" column="69" lean-forward="false" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-            <folding>
-              <marker date="1503929895000" expanded="true" signature="384:490" ph="platforms: &lt;1 item&gt;" />
-              <marker date="1503929895000" expanded="true" signature="405:423" ph="eugenmayer/debian9" />
-              <marker date="1503929895000" expanded="true" signature="428:490" ph="driver: &lt;2 keys&gt;" />
-              <marker date="1503929895000" expanded="true" signature="447:465" ph="eugenmayer/debian9" />
-              <marker date="1503929895000" expanded="true" signature="485:490" ph="9.1" />
-            </folding>
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -686,13 +659,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="150">
             <caret line="10" column="69" lean-forward="false" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-            <folding>
-              <marker date="1503929895000" expanded="true" signature="384:490" ph="platforms: &lt;1 item&gt;" />
-              <marker date="1503929895000" expanded="true" signature="405:423" ph="eugenmayer/debian9" />
-              <marker date="1503929895000" expanded="true" signature="428:490" ph="driver: &lt;2 keys&gt;" />
-              <marker date="1503929895000" expanded="true" signature="447:465" ph="eugenmayer/debian9" />
-              <marker date="1503929895000" expanded="true" signature="485:490" ph="9.1" />
-            </folding>
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -767,13 +734,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="150">
             <caret line="10" column="69" lean-forward="false" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-            <folding>
-              <marker date="1503929895000" expanded="true" signature="384:490" ph="platforms: &lt;1 item&gt;" />
-              <marker date="1503929895000" expanded="true" signature="405:423" ph="eugenmayer/debian9" />
-              <marker date="1503929895000" expanded="true" signature="428:490" ph="driver: &lt;2 keys&gt;" />
-              <marker date="1503929895000" expanded="true" signature="447:465" ph="eugenmayer/debian9" />
-              <marker date="1503929895000" expanded="true" signature="485:490" ph="9.1" />
-            </folding>
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -800,13 +761,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding>
-              <marker date="1503929895000" expanded="true" signature="384:490" ph="platforms: &lt;1 item&gt;" />
-              <marker date="1503929895000" expanded="true" signature="405:423" ph="eugenmayer/debian9" />
-              <marker date="1503929895000" expanded="true" signature="428:490" ph="driver: &lt;2 keys&gt;" />
-              <marker date="1503929895000" expanded="true" signature="447:465" ph="eugenmayer/debian9" />
-              <marker date="1503929895000" expanded="true" signature="485:490" ph="9.1" />
-            </folding>
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -852,47 +807,9 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="495">
             <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-            <folding>
-              <marker date="1503929895000" expanded="true" signature="384:490" ph="platforms: &lt;1 item&gt;" />
-              <marker date="1503929895000" expanded="true" signature="405:423" ph="eugenmayer/debian9" />
-              <marker date="1503929895000" expanded="true" signature="428:490" ph="driver: &lt;2 keys&gt;" />
-              <marker date="1503929895000" expanded="true" signature="447:465" ph="eugenmayer/debian9" />
-              <marker date="1503929895000" expanded="true" signature="485:490" ph="9.1" />
-            </folding>
+            <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed_qemu.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="66" column="60" lean-forward="false" selection-start-line="66" selection-start-column="60" selection-end-line="66" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debian/debian9.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,10 +821,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/debian/debian9.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/debian/build_virtualbox.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="53" column="19" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed_qemu.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="51" column="43" lean-forward="false" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
           <folding />
         </state>
       </provider>
