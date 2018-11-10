@@ -17,8 +17,7 @@
     "iso_checksum": "1f97a4b8dee7c3def5cd8215ff01b9edef27c901b28fa8b1ef4f022eff7c36c2",
     "iso_checksum_type": "sha256",
     "memory": "1024",
-    "name": "debian-
-    ",
+    "name": "debian-",
     "no_proxy": "{{env `no_proxy`}}",
     "preseed_path": "debian9/preseed.cfg",
     "preseed_qemu_path": "debian9/preseed_qemu.cfg",
