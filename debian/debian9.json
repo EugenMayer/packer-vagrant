@@ -96,7 +96,7 @@
           "--variant",
           "STREAM",
           "--size",
-          "1000"
+          "4000"
         ],
         [ "storageattach", "{{.Name}}", "--storagectl", "SATA Controller", "--port", "1", "--type", "hdd", "--medium", "data_disk.vmdk" ]
       ],
