@@ -5,3 +5,4 @@ builds
 *.qcow2
 *-amd64-virtualbox
 *-amd64-qemu
+.idea/workspace.xml

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33773852-9bf1-4734-9e97-c65054c8cbaa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/debian/debian9.json" beforeDir="false" afterPath="$PROJECT_DIR$/debian/debian9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/http/debian9/preseed.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/http/debian9/preseed.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/http/debian9/preseed_1drive.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/http/debian9/preseed_1drive.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,24 +21,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cfg" value="6" />
+          <entry key="cfg" value="8" />
+          <entry key="gitignore" value="5" />
           <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Git file" value="5" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/debian/debian9.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
+            <state relative-caret-position="337">
               <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
             </state>
           </provider>
@@ -66,17 +67,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="105">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            <state relative-caret-position="45">
+              <caret line="3" column="17" selection-start-line="3" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -106,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed.cfg">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="64" column="17" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+              <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -172,14 +173,14 @@
         <option value="$PROJECT_DIR$/resources/scripts/debian/networking.sh" />
         <option value="$PROJECT_DIR$/debian/debian9_qemu.json" />
         <option value="$PROJECT_DIR$/debian/build_qemu.sh" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/debian/build_virtualbox.sh" />
         <option value="$PROJECT_DIR$/makefile" />
         <option value="$PROJECT_DIR$/resources/http/debian9/preseed_qemu.cfg" />
-        <option value="$PROJECT_DIR$/resources/http/debian9/preseed.cfg" />
         <option value="$PROJECT_DIR$/resources/http/debian9/preseed_1drive.cfg" />
         <option value="$PROJECT_DIR$/debian/debian9.json" />
+        <option value="$PROJECT_DIR$/resources/http/debian9/preseed.cfg" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -328,7 +329,7 @@
       <workItem from="1503830459447" duration="20549000" />
       <workItem from="1503920032152" duration="8058000" />
       <workItem from="1504021014328" duration="252000" />
-      <workItem from="1541874485084" duration="86000" />
+      <workItem from="1541874485084" duration="750000" />
     </task>
     <task id="LOCAL-00001" summary="use ext4, not btrfs">
       <created>1503677288435</created>
@@ -362,13 +363,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52278000" />
+    <option name="totallyTimeSpent" value="52942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1860" height="972" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33113313" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33113313" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -381,7 +381,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.38452786" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.38452786" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32885376" />
       <window_info anchor="right" id="SciView" />
@@ -430,20 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -468,13 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="64" column="17" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed_1drive.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -484,8 +463,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/debian/debian9.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
+        <state relative-caret-position="337">
           <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
