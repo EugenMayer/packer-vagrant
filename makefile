@@ -25,3 +25,4 @@ run_locally:
 cleanup_run:
 	 vagrant box remove eugenmayer/debian9test --box-version=0
 	 vagrant destroy || true
+	 rm -f Vagrantfile
