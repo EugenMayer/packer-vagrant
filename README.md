@@ -32,3 +32,10 @@ for example
 make debian_vbox
 make debian_qemu
 ```
+
+You can then start the box locally without uploading it
+
+```
+make run_locally
+vagrant ssh
+```
