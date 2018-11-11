@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33773852-9bf1-4734-9e97-c65054c8cbaa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debian/debian9.json" beforeDir="false" afterPath="$PROJECT_DIR$/debian/debian9.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,13 +23,13 @@
         <counts>
           <entry key="cfg" value="8" />
           <entry key="gitignore" value="5" />
-          <entry key="json" value="1" />
+          <entry key="json" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="5" />
-          <entry key="JSON" value="1" />
+          <entry key="JSON" value="5" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
@@ -37,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/debian/debian9.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
+            <state relative-caret-position="-2236">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -73,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makefile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="17" selection-start-line="3" selection-end-line="3" selection-end-column="17" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -178,9 +178,9 @@
         <option value="$PROJECT_DIR$/makefile" />
         <option value="$PROJECT_DIR$/resources/http/debian9/preseed_qemu.cfg" />
         <option value="$PROJECT_DIR$/resources/http/debian9/preseed_1drive.cfg" />
-        <option value="$PROJECT_DIR$/debian/debian9.json" />
         <option value="$PROJECT_DIR$/resources/http/debian9/preseed.cfg" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/debian/debian9.json" />
       </list>
     </option>
   </component>
@@ -329,7 +329,7 @@
       <workItem from="1503830459447" duration="20549000" />
       <workItem from="1503920032152" duration="8058000" />
       <workItem from="1504021014328" duration="252000" />
-      <workItem from="1541874485084" duration="750000" />
+      <workItem from="1541874485084" duration="3525000" />
     </task>
     <task id="LOCAL-00001" summary="use ext4, not btrfs">
       <created>1503677288435</created>
@@ -363,7 +363,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52942000" />
+    <option name="totallyTimeSpent" value="55717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1860" height="972" extended-state="0" />
@@ -423,13 +423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/debian/build_virtualbox.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -461,13 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/debian/debian9.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -485,7 +471,21 @@
     <entry file="file://$PROJECT_DIR$/makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="17" selection-start-line="3" selection-end-line="3" selection-end-column="17" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debian/build_virtualbox.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debian/debian9.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2236">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="43" />
         </state>
       </provider>
     </entry>
