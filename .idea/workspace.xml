@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33773852-9bf1-4734-9e97-c65054c8cbaa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debian/debian9.json" beforeDir="false" afterPath="$PROJECT_DIR$/debian/debian9.json" afterDir="false" />
-    </list>
+    <list default="true" id="33773852-9bf1-4734-9e97-c65054c8cbaa" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/debian/debian9.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2236">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="43" />
+            <state relative-caret-position="240">
+              <caret line="16" column="85" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -329,7 +326,7 @@
       <workItem from="1503830459447" duration="20549000" />
       <workItem from="1503920032152" duration="8058000" />
       <workItem from="1504021014328" duration="252000" />
-      <workItem from="1541874485084" duration="3525000" />
+      <workItem from="1541874485084" duration="3575000" />
     </task>
     <task id="LOCAL-00001" summary="use ext4, not btrfs">
       <created>1503677288435</created>
@@ -363,10 +360,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55717000" />
+    <option name="totallyTimeSpent" value="55767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1860" height="972" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33113313" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -484,8 +482,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/debian/debian9.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2236">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="43" />
+        <state relative-caret-position="240">
+          <caret line="16" column="85" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="85" />
         </state>
       </provider>
     </entry>
