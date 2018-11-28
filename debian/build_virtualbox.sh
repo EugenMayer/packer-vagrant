@@ -2,5 +2,7 @@
 
 set -e
 
+PACKCONFIG=${1:-debian9.json}
+
 export PACKER_KEY_INTERVAL=10ms
-packer build --only=virtualbox-iso debian9.json
+packer build --only=virtualbox-iso $PACKCONFIG

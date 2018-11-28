@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33773852-9bf1-4734-9e97-c65054c8cbaa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debian/debian9.3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debian/build_qemu.sh" beforeDir="false" afterPath="$PROJECT_DIR$/debian/build_qemu.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debian/build_virtualbox.sh" beforeDir="false" afterPath="$PROJECT_DIR$/debian/build_virtualbox.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debian/debian9.json" beforeDir="false" afterPath="$PROJECT_DIR$/debian/debian9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/http/debian9/preseed.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/http/debian9/preseed.cfg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,26 +21,29 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Vagrantfile" value="4" />
-          <entry key="cfg" value="13" />
+          <entry key="cfg" value="14" />
           <entry key="gitignore" value="11" />
-          <entry key="json" value="8" />
-          <entry key="makefile" value="185" />
+          <entry key="json" value="10" />
+          <entry key="makefile" value="263" />
           <entry key="md" value="94" />
+          <entry key="sh" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Bash" value="52" />
           <entry key="Git file" value="11" />
-          <entry key="JSON" value="8" />
-          <entry key="Makefile" value="185" />
+          <entry key="JSON" value="10" />
+          <entry key="Makefile" value="263" />
           <entry key="Markdown" value="94" />
-          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="PLAIN_TEXT" value="14" />
           <entry key="Ruby" value="4" />
         </counts>
       </usages-collector>
@@ -42,14 +51,16 @@
         <counts>
           <entry key="Vagrantfile" value="1" />
           <entry key="cfg" value="3" />
+          <entry key="json" value="1" />
           <entry key="makefile" value="1" />
           <entry key="md" value="1" />
-          <entry key="sh" value="5" />
+          <entry key="sh" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Bash" value="5" />
+          <entry key="Bash" value="7" />
+          <entry key="JSON" value="1" />
           <entry key="Makefile" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
@@ -63,49 +74,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/debian/debian9.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="173" selection-start-line="173" selection-end-line="173" />
+            <state relative-caret-position="1470">
+              <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/debian/debian9.3.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/makefile">
+        <entry file="file://$PROJECT_DIR$/debian/build_virtualbox.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vagrantfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed_1drive.cfg">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="83" column="18" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="18" />
+            <state relative-caret-position="105">
+              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/debian/build_qemu.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -125,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed.cfg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="115" selection-start-line="115" selection-end-line="115" />
+            <state relative-caret-position="394">
+              <caret line="83" column="12" lean-forward="true" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -139,7 +146,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed_qemu.cfg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
+            <state relative-caret-position="765">
               <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
             </state>
           </provider>
@@ -195,16 +202,16 @@
         <option value="$PROJECT_DIR$/resources/http/debian9/preseed_qemu.cfg.,bkp" />
         <option value="$PROJECT_DIR$/resources/scripts/debian/networking.sh" />
         <option value="$PROJECT_DIR$/debian/debian9_qemu.json" />
-        <option value="$PROJECT_DIR$/debian/build_qemu.sh" />
-        <option value="$PROJECT_DIR$/debian/build_virtualbox.sh" />
         <option value="$PROJECT_DIR$/resources/http/debian9/preseed_qemu.cfg" />
         <option value="$PROJECT_DIR$/resources/http/debian9/preseed_1drive.cfg" />
-        <option value="$PROJECT_DIR$/resources/http/debian9/preseed.cfg" />
         <option value="$PROJECT_DIR$/Vagrantfile" />
-        <option value="$PROJECT_DIR$/debian/debian9.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/makefile" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/resources/http/debian9/preseed.cfg" />
+        <option value="$PROJECT_DIR$/debian/debian9.json" />
+        <option value="$PROJECT_DIR$/debian/build_qemu.sh" />
+        <option value="$PROJECT_DIR$/debian/build_virtualbox.sh" />
+        <option value="$PROJECT_DIR$/makefile" />
       </list>
     </option>
   </component>
@@ -231,7 +238,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,10 +245,34 @@
               <item name="packer-vagrant" type="b2602c69:ProjectViewProjectNode" />
               <item name="packer-vagrant" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="packer-vagrant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="packer-vagrant" type="462c0819:PsiDirectoryNode" />
+              <item name="debian" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="packer-vagrant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="packer-vagrant" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="packer-vagrant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="packer-vagrant" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="packer-vagrant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="packer-vagrant" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="debian9" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -255,6 +285,9 @@
     <property name="settings.editor.selected.configurable" value="sshConsole" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/debian" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/debian" />
@@ -318,6 +351,7 @@
       <workItem from="1503920032152" duration="8058000" />
       <workItem from="1504021014328" duration="252000" />
       <workItem from="1541874485084" duration="9722000" />
+      <workItem from="1543433157834" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="use ext4, not btrfs">
       <created>1503677288435</created>
@@ -351,7 +385,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61914000" />
+    <option name="totallyTimeSpent" value="62236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1860" height="972" extended-state="0" />
@@ -361,7 +395,6 @@
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -370,10 +403,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49889988" visible="true" weight="0.38452786" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5011001" side_tool="true" visible="true" weight="0.38452786" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49834985" visible="true" weight="0.19112629" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50165015" side_tool="true" visible="true" weight="0.19112629" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32885376" />
-      <window_info anchor="right" id="SciView" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="make" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -383,6 +417,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="SciView" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,20 +440,6 @@
     <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed_2drives_custom.cfg" />
     <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed_qemu.cfg.,bkp" />
     <entry file="file://$PROJECT_DIR$/debian/debian9_qemu.json" />
-    <entry file="file://$PROJECT_DIR$/debian/build_qemu.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debian/build_virtualbox.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/scripts/debian/virtualbox.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -429,45 +450,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/scripts/debian/vagrant.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed_qemu.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed_1drive.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="83" column="18" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/scripts/debian/update.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/scripts/debian/cleanup.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vagrantfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/scripts/debian/update.sh" />
+    <entry file="file://$PROJECT_DIR$/Vagrantfile" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -475,17 +459,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/debian/debian9.json">
+    <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed_1drive.cfg">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
+        <state relative-caret-position="1245">
+          <caret line="83" column="18" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/makefile">
+    <entry file="file://$PROJECT_DIR$/resources/scripts/debian/cleanup.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/scripts/debian/vagrant.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed_qemu.cfg">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        <state relative-caret-position="765">
+          <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -496,6 +486,44 @@
             <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/http/debian9/preseed.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="83" column="12" lean-forward="true" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debian/debian9.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debian/debian9.3.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debian/build_qemu.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debian/build_virtualbox.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
         </state>
       </provider>
     </entry>

@@ -2,10 +2,11 @@ DEFAULT_GOAL=all
 
 # ################  debian
 image_debian_vbox:
-	cd ./debian && ./build_virtualbox.sh
+    # yet we are building debian 9.3 due to rancher bugs with > 9.3
+	cd ./debian && ./build_virtualbox.sh debian9.3json
 
 image_debian_qemu:
-	cd ./debian && ./build_qemu.sh
+	cd ./debian && ./build_qemu.sh debian9.3json
 
 image_debian: image_debian_vbox image_debian_qemu
 
