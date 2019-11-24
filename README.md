@@ -5,9 +5,12 @@ Images
 
 ## Debian
 
-Published under https://app.vagrantup.com/eugenmayer/boxes/debian9
+Published under 
+ - Buster: https://app.vagrantup.com/eugenmayer/boxes/debian10
+ - Stretch: https://app.vagrantup.com/eugenmayer/boxes/debian9
 
- - using 2 drives, one for the system, one for data ( showing of in preseed )
+Aspects
+ - using 2 drives, one for the system, one for data ( check preseeds )
  - extra volume for /var/log to ensure we cannot run full due to logs
  - LVM with 2 vgs, one for each drive (system/data)
  
@@ -19,18 +22,27 @@ platforms:
   - name: eugenmayer/debian9
     driver:
       box: eugenmayer/debian9
-      box_version: "9.6"
+      box_version: "9.9"
+  - name: eugenmayer/debian10
+    driver:
+      box: eugenmayer/debian10
+      box_version: "10.1"
+
 ```
 
-
-Build
+Build yourself
 -----
 
 for example
 
 ```bash
-make debian_vbox
-make debian_qemu
+# debian 10
+make image_debian_vbox
+make image_debian_qemu
+
+# debian 9
+make image_debian9_vbox
+make image_debian9_qemu
 ```
 
 You can then start the box locally without uploading it
