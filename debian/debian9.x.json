@@ -11,7 +11,7 @@
     "headless": "false",
     "http_proxy": "{{env `http_proxy`}}",
     "https_proxy": "{{env `https_proxy`}}",
-    "mirror": "http://cdimage.debian.org/cdimage/release",
+    "mirror": "http://cdimage.debian.org/cdimage/archive",
     "mirror_directory": "9.6.0/amd64/iso-cd",
     "iso_name": "debian-9.6.0-amd64-netinst.iso",
     "iso_checksum": "sha256:c51d84019c3637ae9d12aa6658ea8c613860c776bd84c6a71eaaf765a0dd60fe",

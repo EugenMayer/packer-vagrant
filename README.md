@@ -1,19 +1,19 @@
 Packer based templates to build boxes for vagrant
 
-Images
-----
+## Images
 
 ## Debian
 
-Published under 
- - Buster: https://app.vagrantup.com/eugenmayer/boxes/debian10
- - Stretch: https://app.vagrantup.com/eugenmayer/boxes/debian9
+Published under
+
+- Buster: https://app.vagrantup.com/eugenmayer/boxes/debian10
+- Stretch: https://app.vagrantup.com/eugenmayer/boxes/debian9
 
 Aspects
- - using 2 drives, one for the system, one for data ( check preseeds )
- - extra volume for /var/log to ensure we cannot run full due to logs
- - LVM with 2 vgs, one for each drive (system/data)
- 
+
+- using 2 drives, one for the system, one for data ( check pre-seeds )
+- extra volume for /var/log to ensure we cannot run full due to logs
+- LVM with 2 vgs, one for each drive (system/data)
 
 Usage as a platform would be
 
@@ -22,16 +22,14 @@ platforms:
   - name: eugenmayer/debian9
     driver:
       box: eugenmayer/debian9
-      box_version: "9.9"
+      box_version: '9.9'
   - name: eugenmayer/debian10
     driver:
       box: eugenmayer/debian10
-      box_version: "10.1"
-
+      box_version: '10.1'
 ```
 
-Build yourself
------
+## Build yourself
 
 for example
 

@@ -10,7 +10,6 @@
     "headless": "false",
     "http_proxy": "{{env `http_proxy`}}",
     "https_proxy": "{{env `https_proxy`}}",
-    "mirror": "http://cdimage.debian.org/cdimage/archive",
     "iso_checksum": "sha256:7915fdb77a0c2623b4481fc5f0a8052330defe1cde1e0834ff233818dc6f301e",
     "iso_debian_version": "10.1.0",
     "iso_template_url": "https://cdimage.debian.org/cdimage/archive/{{user `iso_debian_version`}}/amd64/iso-cd/debian-{{user `iso_debian_version`}}-amd64-netinst.iso",
