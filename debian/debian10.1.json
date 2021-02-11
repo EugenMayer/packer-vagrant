@@ -11,7 +11,7 @@
     "http_proxy": "{{env `http_proxy`}}",
     "https_proxy": "{{env `https_proxy`}}",
     "mirror": "http://cdimage.debian.org/cdimage/archive",
-    "iso_checksum": "7915fdb77a0c2623b4481fc5f0a8052330defe1cde1e0834ff233818dc6f301e",
+    "iso_checksum": "sha256:7915fdb77a0c2623b4481fc5f0a8052330defe1cde1e0834ff233818dc6f301e",
     "iso_debian_version": "10.1.0",
     "iso_template_url": "https://cdimage.debian.org/cdimage/archive/{{user `iso_debian_version`}}/amd64/iso-cd/debian-{{user `iso_debian_version`}}-amd64-netinst.iso",
     "memory": "1024",
@@ -24,11 +24,11 @@
   },
   "builders": [
     {
-       "boot_command": [
+      "boot_command": [
         "<esc><wait>",
         "install <wait>",
         "net.ifnames=0 <wait>",
-         " preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/{{user `preseed_virtualbox_path`}} <wait>",
+        " preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/{{user `preseed_virtualbox_path`}} <wait>",
         "debian-installer=en_US.UTF-8 <wait>",
         "auto <wait>",
         "locale=en_US.UTF-8 <wait>",
@@ -49,15 +49,14 @@
         "passwd/user-uid=\"1000\" ",
         "passwd/user-password=\"{{user `password`}}\" passwd/user-password-again=\"{{user `password`}}\" ",
 
-         "partman-auto/disk=\"/dev/sda /dev/sdb\" ",
-         "<enter><wait>"
+        "partman-auto/disk=\"/dev/sda /dev/sdb\" ",
+        "<enter><wait>"
       ],
       "http_directory": "../resources/http",
       "boot_wait": "10s",
       "disk_size": "{{user `disk_size`}}",
       "headless": "{{ user `headless` }}",
       "iso_checksum": "{{user `iso_checksum`}}",
-      "iso_checksum_type": "sha256",
       "iso_url": "{{user `iso_template_url`}}",
 
       "ssh_username": "{{user `user`}}",
@@ -73,23 +72,31 @@
       "guest_os_type": "Debian_64",
       "hard_drive_interface": "sata",
       "vboxmanage": [
+        ["modifyvm", "{{.Name}}", "--memory", "{{ user `memory` }}"],
+        ["modifyvm", "{{.Name}}", "--cpus", "{{ user `cpus` }}"],
         [
-          "modifyvm",
+          "createhd",
+          "disk",
+          "--format",
+          "VMDK",
+          "--filename",
+          "data_disk.vmdk",
+          "--variant",
+          "STREAM",
+          "--size",
+          "15000"
+        ],
+        [
+          "storageattach",
           "{{.Name}}",
-          "--memory",
-          "{{ user `memory` }}"
-        ],
-        [
-          "modifyvm",
-          "{{.Name}}",
-          "--cpus",
-          "{{ user `cpus` }}"
-        ],
-        [
-          "createhd", "disk", "--format", "VMDK", "--filename", "data_disk.vmdk", "--variant", "STREAM", "--size", "15000"
-        ],
-        [
-          "storageattach", "{{.Name}}", "--storagectl", "SATA Controller", "--port", "1", "--type", "hdd", "--medium", "data_disk.vmdk"
+          "--storagectl",
+          "SATA Controller",
+          "--port",
+          "1",
+          "--type",
+          "hdd",
+          "--medium",
+          "data_disk.vmdk"
         ]
       ],
       "virtualbox_version_file": ".vbox_version",
@@ -145,12 +152,8 @@
       "format": "qcow2",
       "vm_name": "{{ user `template` }}",
       "qemuargs": [
-        [ "-drive",
-          "file=system_disk_qemu.qcow2,if=virtio,index=0,format=qcow2,id=disk0"
-        ],
-        [ "-drive",
-          "file=data_disk_qemu.qcow2,if=virtio,index=1,format=qcow2,id=disk1"
-        ]
+        ["-drive", "file=system_disk_qemu.qcow2,if=virtio,index=0,format=qcow2,id=disk0"],
+        ["-drive", "file=data_disk_qemu.qcow2,if=virtio,index=1,format=qcow2,id=disk1"]
       ]
     }
   ],

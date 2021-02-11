@@ -2,14 +2,14 @@ DEFAULT_GOAL=all
 
 # ################  debian
 image_debian_vbox_headless:
-	cd ./debian && ./build_virtualbox.sh -var "post_shutdown_delay=2m" -var 'headless=true' debian10.1.json
+	cd ./debian && ./build_virtualbox.sh -var "post_shutdown_delay=2m" -var 'headless=true' debian10.8.json
 
 image_debian_vbox:
 	# without headless, -var "post_shutdown_delay=2m"  is needed due to https://github.com/hashicorp/packer/issues/2401#issuecomment-287241531
-	cd ./debian && ./build_virtualbox.sh -var "post_shutdown_delay=2m" debian10.1.json
+	cd ./debian && ./build_virtualbox.sh -var "post_shutdown_delay=2m" debian10.8.json
 
 image_debian_qemu:
-	cd ./debian && ./build_qemu.sh debian10.1json
+	cd ./debian && ./build_qemu.sh debian10.8json
 
 image_debian9_vbox:
     # yet we are building debian 9.3 due to rancher bugs with > 9.3
