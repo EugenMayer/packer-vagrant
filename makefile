@@ -27,13 +27,13 @@ clean:
 ### test stuff
 
 run_locally:
-	vagrant box add --force --name eugenmayer/debian9test debian/builds/debian-9.3.virtualbox.box
+	vagrant box add --force --name eugenmayer/debian10test debian/builds/debian-10.8.virtualbox.box
 	rm -f Vagrantfile
-	vagrant init eugenmayer/debian9test
+	vagrant init eugenmayer/debian10test
 	vagrant destroy || true
 	vagrant up
 
 cleanup_run:
-	 vagrant box remove eugenmayer/debian9test --box-version=0
+	 vagrant box remove eugenmayer/debian10test --box-version=0
 	 vagrant destroy || true
 	 rm -f Vagrantfile

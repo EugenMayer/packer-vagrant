@@ -26,7 +26,7 @@
       "boot_command": [
         "<esc><wait>",
         "install <wait>",
-        "net.ifnames=1 <wait>",
+        " net.ifnames=1 <wait>",
         " preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/{{user `preseed_virtualbox_path`}} <wait>",
         "debian-installer=en_US.UTF-8 <wait>",
         "auto <wait>",
@@ -105,6 +105,7 @@
       "boot_command": [
         "<esc><wait>",
         "install <wait>",
+        " net.ifnames=1 <wait>",
         " preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/{{user `preseed_qemu_path`}} <wait>",
         "debian-installer=en_US.UTF-8 <wait>",
         "auto <wait>",
