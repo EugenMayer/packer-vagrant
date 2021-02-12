@@ -26,7 +26,7 @@ platforms:
   - name: eugenmayer/debian10
     driver:
       box: eugenmayer/debian10
-      box_version: '10.1'
+      box_version: '10.8.2'
 ```
 
 ## Build yourself
