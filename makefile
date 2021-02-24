@@ -8,6 +8,10 @@ image_debian_vbox:
 	# without headless, -var "post_shutdown_delay=2m"  is needed due to https://github.com/hashicorp/packer/issues/2401#issuecomment-287241531
 	cd ./debian && ./build_virtualbox.sh -var "post_shutdown_delay=2m" debian10.8.json
 
+image_debian_big_vbox:
+	# without headless, -var "post_shutdown_delay=2m"  is needed due to https://github.com/hashicorp/packer/issues/2401#issuecomment-287241531
+	cd ./debian && ./build_virtualbox.sh -var "post_shutdown_delay=2m" -var "disk_size=20000" -var "preseed_virtualbox_path=debian10/preseed-big.cfg" debian10.8.json
+
 image_debian_qemu:
 	cd ./debian && ./build_qemu.sh debian10.8json
 
