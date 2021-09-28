@@ -6,6 +6,7 @@ Packer based templates to build boxes for vagrant
 
 Published under
 
+- Bullseye: https://app.vagrantup.com/eugenmayer/boxes/debian11
 - Buster: https://app.vagrantup.com/eugenmayer/boxes/debian10
 - Stretch: https://app.vagrantup.com/eugenmayer/boxes/debian9
 
@@ -19,14 +20,14 @@ Usage as a platform would be
 
 ```yaml
 platforms:
-  - name: eugenmayer/debian9
-    driver:
-      box: eugenmayer/debian9
-      box_version: '9.9'
   - name: eugenmayer/debian10
     driver:
       box: eugenmayer/debian10
-      box_version: '10.8.2'
+      box_version: '10.10.0'
+  - name: eugenmayer/debian11
+    driver:
+      box: eugenmayer/debian11
+      box_version: '10.11.0'
 ```
 
 ## Build yourself
