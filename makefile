@@ -2,25 +2,25 @@ DEFAULT_GOAL=all
 
 # ################  debian
 image_debian_vbox_headless:
-	cd ./debian && ./build_virtualbox.sh -var "post_shutdown_delay=2m" -var 'headless=true' debian10.8.json
+	cd ./debian && ./build_virtualbox.sh -var "post_shutdown_delay=2m" -var 'headless=true' debian11.0.json
 
 image_debian_vbox:
 	# without headless, -var "post_shutdown_delay=2m"  is needed due to https://github.com/hashicorp/packer/issues/2401#issuecomment-287241531
-	cd ./debian && ./build_virtualbox.sh -var "post_shutdown_delay=2m" debian10.8.json
+	cd ./debian && ./build_virtualbox.sh -var "post_shutdown_delay=2m" debian11.0.json
 
 image_debian_big_vbox:
 	# without headless, -var "post_shutdown_delay=2m"  is needed due to https://github.com/hashicorp/packer/issues/2401#issuecomment-287241531
-	cd ./debian && ./build_virtualbox.sh -var "post_shutdown_delay=2m" -var "disk_size=20000" -var "preseed_virtualbox_path=debian10/preseed-big.cfg" debian10.8.json
+	cd ./debian && ./build_virtualbox.sh -var "post_shutdown_delay=2m" -var "disk_size=20000" -var "preseed_virtualbox_path=debian10/preseed-big.cfg" debian11.0.json
 
 image_debian_qemu:
-	cd ./debian && ./build_qemu.sh debian10.8json
+	cd ./debian && ./build_qemu.sh debian11.0json
 
-image_debian9_vbox:
+image_debian10_vbox:
     # yet we are building debian 9.3 due to rancher bugs with > 9.3
-	cd ./debian && ./build_virtualbox.sh debian9.3.json
+	cd ./debian && ./build_virtualbox.sh debian10.10.json
 
-image_debian9_qemu:
-	cd ./debian && ./build_qemu.sh debian9.3json
+image_debian10_qemu:
+	cd ./debian && ./build_qemu.sh debian10.10.json
 
 image_debian: image_debian_vbox image_debian_qemu
 
