@@ -136,7 +136,6 @@
       "headless": "{{ user `headless` }}",
 
       "iso_checksum": "{{user `iso_checksum`}}",
-      "iso_checksum_type": "sha256",
       "iso_url": "{{user `iso_template_url`}}",
 
       "ssh_username": "{{user `user`}}",
