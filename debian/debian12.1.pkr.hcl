@@ -107,7 +107,7 @@ variable "version" {
 }
 
 locals {
-  iso_template_url = "http://cdimage.debian.org/cdimage/release/${var.iso_debian_version}/amd64/iso-cd/debian-${var.iso_debian_version}-amd64-netinst.iso"
+  iso_template_url = "http://cdimage.debian.org/cdimage/archive/${var.iso_debian_version}/amd64/iso-cd/debian-${var.iso_debian_version}-amd64-netinst.iso"
 }
 
 source "qemu" "vm" {
