@@ -3,4 +3,5 @@
 set -e
 
 export PACKER_KEY_INTERVAL=10ms
-packer build --only=virtualbox-iso "$@"
+packer init -upgrade "$@"
+packer build -force --only=virtualbox-iso.vm "$@"

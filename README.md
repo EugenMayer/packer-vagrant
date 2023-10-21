@@ -6,6 +6,7 @@ Packer based templates to build boxes for vagrant
 
 Published under
 
+- Bookworm: https://app.vagrantup.com/eugenmayer/boxes/debian12
 - Bullseye: https://app.vagrantup.com/eugenmayer/boxes/debian11
 - Buster: https://app.vagrantup.com/eugenmayer/boxes/debian10
 - Stretch: https://app.vagrantup.com/eugenmayer/boxes/debian9
@@ -27,7 +28,11 @@ platforms:
   - name: eugenmayer/debian11
     driver:
       box: eugenmayer/debian11
-      box_version: '10.11.0'
+      box_version: '11.0.0'
+  - name: eugenmayer/debian12
+    driver:
+      box: eugenmayer/debian12
+      box_version: '12.1.0'
 ```
 
 ## Build yourself
@@ -35,13 +40,17 @@ platforms:
 for example
 
 ```bash
-# debian 10
+# debian stable
 make image_debian_vbox
 make image_debian_qemu
 
-# debian 9
-make image_debian9_vbox
-make image_debian9_qemu
+# debian 11
+make image_debian11_vbox
+make image_debian11_qemu
+
+# debian 10
+make image_debian10_vbox
+make image_debian10_qemu
 ```
 
 You can then start the box locally without uploading it
