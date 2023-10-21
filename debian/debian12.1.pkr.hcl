@@ -78,12 +78,12 @@ variable "password" {
 
 variable "preseed_qemu_path" {
   type    = string
-  default = "debian11/preseed_qemu.cfg"
+  default = "debian12/preseed_qemu.cfg"
 }
 
 variable "preseed_virtualbox_path" {
   type    = string
-  default = "debian11/preseed.cfg"
+  default = "debian12/preseed.cfg"
 }
 
 variable "ssh_port" {
@@ -93,7 +93,7 @@ variable "ssh_port" {
 
 variable "template" {
   type    = string
-  default = "debian-11.0-amd64"
+  default = "debian-12.0-amd64"
 }
 
 variable "user" {
