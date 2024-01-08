@@ -47,10 +47,6 @@ make image_debian_qemu
 # debian 11
 make image_debian11_vbox
 make image_debian11_qemu
-
-# debian 10
-make image_debian10_vbox
-make image_debian10_qemu
 ```
 
 You can then start the box locally without uploading it
