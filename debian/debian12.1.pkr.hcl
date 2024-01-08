@@ -8,6 +8,10 @@ packer {
       source  = "github.com/hashicorp/vagrant"
       version = "~> 1"
     }
+    virtualbox = {
+      version = "~> 1"
+      source  = "github.com/hashicorp/virtualbox"
+    }
   }
 }
 
@@ -48,12 +52,12 @@ variable "https_proxy" {
 
 variable "iso_checksum" {
   type    = string
-  default = "9da6ae5b63a72161d0fd4480d0f090b250c4f6bf421474e4776e82eea5cb3143bf8936bf43244e438e74d581797fe87c7193bbefff19414e33932fe787b1400f"
+  default = "11d733d626d1c7d3b20cfcccc516caff2cbc57c81769d56434aab958d4d9b3af59106bc0796252aeefede8353e2582378e08c65e35a36769d5cf673c5444f80e"
 }
 
 variable "iso_debian_version" {
   type    = string
-  default = "12.1.0"
+  default = "12.2.0"
 }
 
 variable "memory" {
