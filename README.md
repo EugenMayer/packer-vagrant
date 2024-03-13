@@ -28,11 +28,17 @@ platforms:
   - name: eugenmayer/debian11
     driver:
       box: eugenmayer/debian11
-      box_version: '11.0.0'
+      box_version: '11.9.0'
   - name: eugenmayer/debian12
     driver:
       box: eugenmayer/debian12
-      box_version: '12.1.0'
+      box_version: '12.4.0'
+```
+
+or 
+
+```bash
+vagrant init eugenmayer/debian12
 ```
 
 ## Build yourself
@@ -42,11 +48,9 @@ for example
 ```bash
 # debian stable
 make image_debian_vbox
-make image_debian_qemu
 
 # debian 11
 make image_debian11_vbox
-make image_debian11_qemu
 ```
 
 You can then start the box locally without uploading it
