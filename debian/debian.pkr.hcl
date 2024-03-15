@@ -105,7 +105,7 @@ locals {
 source "virtualbox-iso" "vm" {
   boot_command            =  [
     "<esc><wait>",
-    "/install.amd/vmlinuz initrd=/install.amd/initrd.gz \"net.ifnames=0 biosdevname=0 ip=dhcp ipv6.disable=1\" preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/${var.preseed_virtualbox_path} <wait>",
+    "/install.amd/vmlinuz initrd=/install.amd/initrd.gz net.ifnames=0 biosdevname=0 ip=dhcp ipv6.disable=1 preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/${var.preseed_virtualbox_path} <wait>",
     "fb=false <wait>",
     "auto-install/enable=true <wait>",
     "auto=true <wait>",
@@ -174,7 +174,8 @@ build {
       # provision vagrant user and ssh
       "../resources/scripts/debian/vagrant.sh",
       "../resources/scripts/debian/networking.sh",
-      "../resources/scripts/debian/cleanup.sh"]
+      "../resources/scripts/debian/cleanup.sh",
+    ]
   }
 
   post-processor "vagrant" {
