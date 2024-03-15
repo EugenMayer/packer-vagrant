@@ -7,3 +7,4 @@ builds
 *-amd64-qemu
 .idea/workspace.xml
 Vagrantfile
+debian/packer-debian*/
