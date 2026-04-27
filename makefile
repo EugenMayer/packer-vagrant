@@ -2,16 +2,16 @@ DEFAULT_GOAL=all
 
 # ################  debian
 image_debian_vbox:
-	cd ./debian && ./build_virtualbox.sh -var-file="debian12.pkrvars.hcl" debian.pkr.hcl
+	cd ./debian && ./build_virtualbox.sh -var-file="debian13.pkrvars.hcl" debian.pkr.hcl
 
 image_debian_big_vbox:
+	cd ./debian && ./build_virtualbox.sh -var-file="debian13.pkrvars.hcl" -var "disk_size=20000" debian.pkr.hcl
+
+image_debian12_vbox:
+	cd ./debian && ./build_virtualbox.sh -var-file="debian12.pkrvars.hcl" debian.pkr.hcl
+
+image_debian12_big_vbox:
 	cd ./debian && ./build_virtualbox.sh -var-file="debian12.pkrvars.hcl" -var "disk_size=20000" debian.pkr.hcl
-
-image_debian11_vbox:
-	cd ./debian && ./build_virtualbox.sh -var-file="debian11.pkrvars.hcl" debian.pkr.hcl
-
-image_debian11_big_vbox:
-	cd ./debian && ./build_virtualbox.sh -var-file="debian11.pkrvars.hcl" -var "disk_size=20000" debian.pkr.hcl
 
 clean:
 	rm -fr debian/builds
@@ -20,13 +20,13 @@ clean:
 ### test stuff
 
 run_locally:
-	vagrant box add --force --name eugenmayer/debian10test debian/builds/debian-10.8.virtualbox.box
+	vagrant box add --force --name kontextwork/debian13test debian/builds/debian-13.virtualbox.box
 	rm -f Vagrantfile
-	vagrant init eugenmayer/debian10test
+	vagrant init kontextwork/debian13test
 	vagrant destroy || true
 	vagrant up
 
 cleanup_run:
-	 vagrant box remove eugenmayer/debian10test --box-version=0
+	 vagrant box remove kontextwork/debian10test --box-version=0
 	 vagrant destroy || true
 	 rm -f Vagrantfile

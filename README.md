@@ -5,11 +5,11 @@ Packer based templates to build boxes for vagrant
 ## Debian
 
 Published under
-
-- Bookworm: https://app.vagrantup.com/eugenmayer/boxes/debian12
-- Bullseye: https://app.vagrantup.com/eugenmayer/boxes/debian11
-- Buster: https://app.vagrantup.com/eugenmayer/boxes/debian10
-- Stretch: https://app.vagrantup.com/eugenmayer/boxes/debian9
+- Trixie: https://portal.cloud.hashicorp.com/vagrant/discover/kontextwork/debian13
+- Bookworm: https://portal.cloud.hashicorp.com/vagrant/discover/eugnemayer/debian12
+- Bullseye: https://portal.cloud.hashicorp.com/vagrant/discover/eugenmayer/debian11
+- Buster: https://portal.cloud.hashicorp.com/vagrant/discover/eugenmayer/debian10
+- Stretch: https://portal.cloud.hashicorp.com/vagrant/discover/eugenmayer/debian9
 
 Aspects
 
@@ -33,12 +33,18 @@ platforms:
     driver:
       box: eugenmayer/debian12
       box_version: '12.4.0'
+  - name: kontextwork/debian13
+    driver:
+      box: kontextwork/debian13
+      box_version: '13.3.0'
 ```
 
 or 
 
 ```bash
+vagrant init kontextwork/debian13
 vagrant init eugenmayer/debian12
+
 ```
 
 ## Build yourself
@@ -50,7 +56,7 @@ for example
 make image_debian_vbox
 
 # debian 11
-make image_debian11_vbox
+make image_debian12_vbox
 ```
 
 You can then start the box locally without uploading it
