@@ -24,9 +24,14 @@ variable "cpus" {
   default = "1"
 }
 
-variable "disk_size" {
+variable "root_disk_size" {
   type    = string
-  default = "10960"
+  default = "10000"
+}
+
+variable "data_disk_size" {
+  type    = string
+  default = "35000"
 }
 
 variable "domain" {
@@ -130,7 +135,7 @@ source "virtualbox-iso" "vm" {
   ]
   boot_wait               = "10s"
   cpus                    = "${var.cpus}"
-  disk_size               = "${var.disk_size}"
+  disk_size               = "${var.root_disk_size}"
   guest_additions_path    = "VBoxGuestAdditions_{{ .Version }}.iso"
   guest_os_type           = "Debian_64"
   hard_drive_interface    = "sata"
@@ -152,7 +157,7 @@ source "virtualbox-iso" "vm" {
   vboxmanage              = [
     ["modifyvm", "{{ .Name }}", "--memory", "${var.memory}"],
     ["modifyvm", "{{ .Name }}", "--cpus", "${var.cpus}"],
-    ["createhd", "disk", "--format", "VMDK", "--filename", "data_disk.vmdk", "--variant", "STREAM", "--size", "15000"],
+    ["createhd", "disk", "--format", "VMDK", "--filename", "data_disk.vmdk", "--variant", "STREAM", "--size", "${var.data_disk_size}"],
     ["storageattach", "{{ .Name }}", "--storagectl", "SATA Controller", "--port", "1", "--type", "hdd", "--medium", "data_disk.vmdk"],
     ["modifyvm", "{{.Name}}", "--vrde", "on"],
     # Needed to fix VirtualBox7 http server access, seehttps://github.com/hashicorp/packer/issues/12118

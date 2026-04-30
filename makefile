@@ -2,16 +2,16 @@ DEFAULT_GOAL=all
 
 # ################  debian
 image_debian_vbox:
-	cd ./debian && ./build_virtualbox.sh -var-file="debian13.pkrvars.hcl" debian.pkr.hcl
+	cd ./debian && ./build_virtualbox.sh -var-file="debian13.pkrvars.hcl" -var "root_disk_size=5000" -var "data_disk_size=5000" debian.pkr.hcl
 
 image_debian_big_vbox:
-	cd ./debian && ./build_virtualbox.sh -var-file="debian13.pkrvars.hcl" -var "disk_size=35000" debian.pkr.hcl
+	cd ./debian && ./build_virtualbox.sh -var-file="debian13.pkrvars.hcl" -var "root_disk_size=10000" -var "data_disk_size=35000" debian.pkr.hcl
 
 image_debian12_vbox:
-	cd ./debian && ./build_virtualbox.sh -var-file="debian12.pkrvars.hcl" debian.pkr.hcl
+	cd ./debian && ./build_virtualbox.sh -var-file="debian12.pkrvars.hcl" -var "root_disk_size=5000" -var "data_disk_size=5000" debian.pkr.hcl
 
 image_debian12_big_vbox:
-	cd ./debian && ./build_virtualbox.sh -var-file="debian12.pkrvars.hcl" -var "disk_size=20000" debian.pkr.hcl
+	cd ./debian && ./build_virtualbox.sh -var-file="debian12.pkrvars.hcl" -var "droot_isk_size=10000" -var "data_disk_size=35000"debian.pkr.hcl
 
 clean:
 	rm -fr debian/builds
