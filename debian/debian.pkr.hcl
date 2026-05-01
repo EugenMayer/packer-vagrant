@@ -8,6 +8,10 @@ packer {
       source  = "github.com/hashicorp/vagrant"
       version = "~> 1"
     }
+    # vagrant_cloud = {
+    #   source  = "github.com/hashicorp/vagrant-cloud"
+    #   version = "~> 1"
+    # }
     virtualbox = {
       version = "~> 1"
       source  = "github.com/hashicorp/virtualbox"
@@ -187,4 +191,11 @@ build {
     keep_input_artifact = true
     output              = "builds/${var.box_basename}.{{ .Provider }}.box"
   }
+
+  # post-processor "vagrant-cloud" {
+  #   access_token = var.cloud_token
+  #   box_tag      = "kontextwork/${var.box_basename}"
+  #   version      = var.iso_debian_version
+  #   architecture = "amd64"
+  # }
 }

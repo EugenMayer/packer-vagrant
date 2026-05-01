@@ -6,7 +6,7 @@ ln -s /dev/null /etc/udev/rules.d/70-persistent-net.rules
 rm -f /lib/udev/rules.d/75-persistent-net-generator.rules
 rm -rf /dev/.udev/ /var/lib/dhcp/*
 
-# ensure we remove the predictied networ settings and also ensure eth0 is configured using DHCP
+# ensure we remove the predicted network settings and also ensure eth0 is configured using DHCP
 # sed -i 's/GRUB_CMDLINE_LINUX="\(.*\)"/GRUB_CMDLINE_LINUX="\1 net.ifnames=0"/' /etc/default/grub
 #update-grub
 #update-initramfs -u
