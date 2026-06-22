@@ -1,5 +1,5 @@
-iso_debian_version      = "13.3.0"
+iso_debian_version      = "13.4.0"
 box_basename            = "debian13"
-iso_checksum            = "1ada40e4c938528dd8e6b9c88c19b978a0f8e2a6757b9cf634987012d37ec98503ebf3e05acbae9be4c0ec00b52e8852106de1bda93a2399d125facea45400f8"
+iso_checksum            = "3e02de4ed744799350bd4039b137053835238ff9f9f29eee812309cd7eebdb5127b0f2b54d167b76d324530aa16939b41ae2d2f2d1995a2801e19938acdc927f"
 preseed_virtualbox_path = "debian13/preseed.cfg"
-headless                = true
+headless                = false

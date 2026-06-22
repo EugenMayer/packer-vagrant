@@ -14,6 +14,7 @@ packer {
     # }
     virtualbox = {
       version = "~> 1"
+      # see https://github.com/hashicorp/packer-plugin-virtualbox
       source  = "github.com/hashicorp/virtualbox"
     }
   }
@@ -55,7 +56,7 @@ variable "http_proxy" {
 
 variable "https_proxy" {
   type    = string
-  default = "${env("https_proxy")}"
+  default = env("https_proxy")
 }
 
 variable "iso_checksum" {
@@ -80,7 +81,7 @@ variable "name" {
 
 variable "no_proxy" {
   type    = string
-  default = "${env("no_proxy")}"
+  default = env("no_proxy")
 }
 
 variable "user" {
@@ -143,32 +144,32 @@ source "virtualbox-iso" "vm" {
   guest_additions_path    = "VBoxGuestAdditions_{{ .Version }}.iso"
   guest_os_type           = "Debian_64"
   hard_drive_interface    = "sata"
-  headless                = "${var.headless}"
+  headless                = var.headless
   http_directory          = "../resources/http"
-  iso_checksum            = "${var.iso_checksum}"
-  iso_url                 = "${local.iso_template_url}"
-  memory                  = "${var.memory}"
+  iso_checksum            = var.iso_checksum
+  iso_url                 = local.iso_template_url
+  memory                  = var.memory
   output_directory        = "packer-${var.box_basename}-amd-virtualbox"
   shutdown_command        = "/sbin/shutdown -hP now"
   gfx_controller          = "vmsvga"
   gfx_vram_size           = "64"
-  ssh_password            = "${var.password}"
-  ssh_port                = "${var.ssh_port}"
+  ssh_password            = var.password
+  ssh_port                = var.ssh_port
   #ssh_pty                 = true
   ssh_read_write_timeout  = "20m"
   ssh_timeout             = "10m"
-  ssh_username            = "${var.user}"
+  ssh_username            = var.user
   vboxmanage              = [
-    ["modifyvm", "{{ .Name }}", "--memory", "${var.memory}"],
-    ["modifyvm", "{{ .Name }}", "--cpus", "${var.cpus}"],
-    ["createhd", "disk", "--format", "VMDK", "--filename", "data_disk.vmdk", "--variant", "STREAM", "--size", "${var.data_disk_size}"],
-    ["storageattach", "{{ .Name }}", "--storagectl", "SATA Controller", "--port", "1", "--type", "hdd", "--medium", "data_disk.vmdk"],
+    ["modifyvm", "{{ .Name }}", "--memory", var.memory],
+    ["modifyvm", "{{ .Name }}", "--cpus", var.cpus],
+    ["createhd", "disk", "--format", "VMDK", "--filename", "data_disk.vmdk", "--variant", "STREAM", "--size", var.data_disk_size],
+    ["storageattach", "{{ .Name }}", "--storagectl", "SATA", "--port", "1", "--type", "hdd", "--medium", "data_disk.vmdk"],
     ["modifyvm", "{{.Name}}", "--vrde", "on"],
     # Needed to fix VirtualBox7 http server access, seehttps://github.com/hashicorp/packer/issues/12118
     ["modifyvm", "{{.Name}}", "--nat-localhostreachable1", "on"],
   ]
   virtualbox_version_file = ".vbox_version"
-  vm_name                 = "${var.box_basename}"
+  vm_name                 = var.box_basename
   # see https://developer.hashicorp.com/packer/integrations/hashicorp/virtualbox/latest/components/builder/iso#run-configuration
   vrdp_port_max           = 5901
   vrdp_port_min           = 5901
@@ -177,6 +178,14 @@ source "virtualbox-iso" "vm" {
 
 build {
   sources = ["source.virtualbox-iso.vm"]
+
+  # disk overview - debug only
+  provisioner "shell" {
+    execute_command = "sh -eux '{{ .Path }}'"
+    inline         = [ "sudo df -h && sudo fdisk -l && sleep 5"]
+  }
+
+
   provisioner "shell" {
     environment_vars = ["HOME_DIR=/home/vagrant", "http_proxy=${var.http_proxy}", "https_proxy=${var.https_proxy}", "no_proxy=${var.no_proxy}"]
     scripts          = [

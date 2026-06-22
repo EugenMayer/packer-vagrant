@@ -21,14 +21,6 @@ Usage as a platform would be
 
 ```yaml
 platforms:
-  - name: eugenmayer/debian10
-    driver:
-      box: eugenmayer/debian10
-      box_version: '10.10.0'
-  - name: eugenmayer/debian11
-    driver:
-      box: eugenmayer/debian11
-      box_version: '11.9.0'
   - name: eugenmayer/debian12
     driver:
       box: eugenmayer/debian12
